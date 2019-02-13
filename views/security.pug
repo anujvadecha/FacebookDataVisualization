@@ -1,0 +1,12 @@
+html
+	head
+		include mystyle.css
+	body
+		#table-wrapper
+		table#calls
+			tr
+				th City_activated_in
+				th Value
+			each key,value in articles.city_activity_in
+				td=articles.city_activity_in.key()
+				td=articles.city_activity_in.value()
